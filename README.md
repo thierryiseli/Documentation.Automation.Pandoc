@@ -10,13 +10,13 @@ Check out https://pandoc.org/installing.html.
 
 ### Preparing
 
-Clone or download the current repository to your preferred location.
+Copy the PowerShell script to your markdown files (download it from the github release). 
 
 ### Installing
 
 If you have not installed chocolatey on your windows host, please refer to https://chocolatey.org/install.
 
-Check out https://pandoc.org/installing.html.
+Check out official installation guide https://pandoc.org/installing.html.
 
 Hint for avoiding problems with MikTex: Run MikTex Console (as administrator), switch du administrator mode and check updates.
 
@@ -24,10 +24,10 @@ Hint for avoiding problems with MikTex: Run MikTex Console (as administrator), s
 
 ### Markdown to PDF
 
-Switch to the location of the cloned or copied repository:
+Switch to the location of the markdown files and powershell script:
 
 ```
-cd yourLocalRepositoryPath
+cd yourLocation
 ```
 
 Execute the following command on the Command Prompt (as administrator):
@@ -35,6 +35,8 @@ Execute the following command on the Command Prompt (as administrator):
 ```
 powershell.exe -ExecutionPolicy bypass -File "markdownToPdf.ps1"
 ```
+
+When it is finished, a PDF has been generated in the current path.
 
 ## Authors
 
